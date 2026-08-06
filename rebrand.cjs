@@ -13,7 +13,7 @@ function walkDir(dir, callback) {
 
 let modifiedFiles = 0;
 
-walkDir('./src', (filePath) => {
+walkDir('.', (filePath) => {
     const ext = path.extname(filePath);
     if (!['.html', '.js', '.json', '.txt', '.css'].includes(ext)) return;
 
